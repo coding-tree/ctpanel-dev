@@ -1,3 +1,0 @@
-#Meet Up
-
-Testing commit
