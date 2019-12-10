@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
   "dependencies": {
-    "concurrently": "^5.0.0"
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "path": "^0.12.7"
   }
 }
