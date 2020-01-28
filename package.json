@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node app.js",
     "install": "npm i --prefix client && npm i --prefix server",
-    "server": "npm run dev --prefix server",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
   },
   "repository": {
     "type": "git",
