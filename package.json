@@ -5,12 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-<<<<<<< HEAD
-=======
     "install:client": "npm i --prefix client",
     "install:server": "npm i --prefix server",
     "install": "concurrently \"npm run install:server\" \"npm run install:client\"",
->>>>>>> 7ae143e04474a3bf0c39374a545b37846e475afd
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
