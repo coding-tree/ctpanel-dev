@@ -10,7 +10,8 @@
     "install": "concurrently \"npm run install:server\" \"npm run install:client\"",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "firstrun": "cd server/crypto && node index && cd .. && cd .. && npm run dev"
   },
   "repository": {
     "type": "git",
