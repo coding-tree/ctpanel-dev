@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
   "dependencies": {
-    "concurrently": "^5.0.0"
+    "concurrently": "^5.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "husky": "^4.2.3"
+  }
 }
