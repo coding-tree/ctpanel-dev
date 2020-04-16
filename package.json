@@ -7,11 +7,11 @@
     "start": "node app.js",
     "install:client": "npm i --prefix client",
     "install:server": "npm i --prefix server",
-    "install:both": "concurrently \"npm run install:server\" \"npm run install:client\"",
+    "install:all": "npm run install:server && npm run install:client",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "firstrun": "cd server/crypto && node index && cd .. && cd .. && npm run dev"
+    "postinstall": "npm run install:all"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
   "dependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "config": "^3.3.1"
   },
   "devDependencies": {
     "husky": "^4.2.3"
