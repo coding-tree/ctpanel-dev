@@ -1,12 +1,12 @@
 {
-  "name": "meet-up",
+  "name": "ctpanel",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "install:client": "npm i --prefix client",
-    "install:server": "npm i --prefix server",
+    "install:client": "cd client && npm i",
+    "install:server": "cd server && npm i",
     "install:all": "npm run install:server && npm run install:client",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
