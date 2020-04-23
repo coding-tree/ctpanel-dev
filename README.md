@@ -1,34 +1,40 @@
-# MEET-UP Organizer for Coding Tree
+# Coding Tree Panel application
 
+Application helps Coding Tree members to achieve great things!
+
+- Meetings organization
+
+    - Plan/Schedule Meetings (IN PROGRESS)
+    - Google Calendar synchronization (TODO)
+    - Facebook events synchronization (TODO)
+    - Create and manage online meetings in popular applications (Zoom, Google Hangout, others?) (TODO)
+    - Discord notifications about meetings (TODO)
+- Track user experience
+    - Register github profile (TODO)
+    - Evaluate points based on users commits and pull requests (TODO)
+    - Compare values between users (TODO)
 
 ## Development
 
-### To run application in development mode
+We have great plans about this application.
+You can help us with development regardless of your experience level.
 
-#### First Install dependencies for root folder 
+### Follow these simple and streight forward steps to easly start application on your local environment
 
-    npm install
+- npm install (from project root directory)
+- Find env files in client and server folders
+- Copy both env files adding dot at the begining
 
-#### Next Install dependiencies for client and server folder
+    Linux commands:
+        
+        cd client
+        cp env .env
+        cd ..
+        cd server
+        cp env .env
 
-    npm run install:both
+- Update values in those files - ask for assistance if needed (: https://discord.gg/vTZqWmW
+- npm run dev
+- Application should be up and runing on your local system
 
-#### You need .env file in server folder
-
-example: 
-
-    MEETUP_SECRET=hehetomobbyn
-    AUTH0_DOMAIN=sgwtfgg.eu.auth0.com
-    AUTH0_CLIENT_ID=qwpeoqdokqopwd
-    AUTH0_CLIENT_SECRET=sqwoekqowdmqwd
-    AUTH0_CALLBACK_URL=http://localhost:3001/callback
-
-#### Next you need to make config file, 
-
-#### You can use this command to firstrun project and generating config file
-
-    npm run firstrun
-
-#### If you already have got config generated use this
-
-    npm run dev
+## Not application for you but still want to help? Checkout our others repositories
