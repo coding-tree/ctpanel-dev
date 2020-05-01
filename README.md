@@ -22,14 +22,11 @@ You can help us with development regardless of your experience level.
 ### Follow these simple and streight forward steps to easly start application on your local environment
 
 - npm install (from project root directory)
-- Find env files in client and server folders
-- Copy both env files adding dot at the begining
+- Find env file server folder
+- Copy env file adding dot at the begining
 
     Linux commands:
         
-        cd client
-        cp env .env
-        cd ..
         cd server
         cp env .env
 
