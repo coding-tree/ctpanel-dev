@@ -11,7 +11,7 @@
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "hotel-init:client": "cd client && hotel add \"npm start\" index.js --change-origin",
+    "hotel-init:client": "cd client && hotel add \"npm start\" index.js",
     "hotel-init:server": "cd server && hotel add \"npm start\" server.js",
     "hotel-init": "npm run hotel-init:client && npm run hotel-init:server",
     "hotel-start": "hotel start",
