@@ -11,14 +11,16 @@
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "hotel-init:client": "cd client && hotel add \"npm start\" index.js",
-    "hotel-init:server": "cd server && hotel add \"npm start\" server.js",
-    "hotel-init": "npm run hotel-init:client && npm run hotel-init:server",
+    "hotel-init-dev:client": "cd client && hotel add \"npm run start-dev\" index.js",
+    "hotel-init-dev:server": "cd server && hotel add \"npm start\" server.js",
+    "hotel-init-dev": "npm run hotel-init-dev:client && npm run hotel-init-dev:server",
+    "hotel-init-prod": "npm run hotel-init-prod:client && npm run hotel-init-prod:server",
     "hotel-start": "hotel start",
     "hotel-stop": "hotel stop",
     "hotel-reset": "hotel stop && hotel start",
     "hotel-info": "hotel --help",
-    "postinstall": "npm run install:all && npm run hotel-init"
+    "postinstall-dev": "npm run install:all && npm run hotel-init-dev",
+    "postinstall-prod": "npm run install:all && npm run hotel-init-prod"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
   "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
   "dependencies": {
     "concurrently": "^5.1.0",
+    "env-cmd": "^10.1.0",
     "hotel": "^0.8.7"
   },
   "devDependencies": {
