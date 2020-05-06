@@ -8,9 +8,16 @@
     "install:client": "cd client && npm i",
     "install:server": "cd server && npm i",
     "install:all": "npm run install:server && npm run install:client",
-    "dev:server": "npm run dev --prefix server",
-    "dev:client": "npm run start --prefix client",
+    "dev:server": "cd server && npm run start:dev",
+    "dev:client": "cd client && npm run start:dev",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "hotel:init-client": "cd client && hotel add \"npm run start:hotel\"",
+    "hotel:init-server": "cd server && hotel add \"npm run start:hotel\"",
+    "hotel:init": "npm run hotel:init-client && npm run hotel:init-server",
+    "hotel:start": "hotel start",
+    "hotel:stop": "hotel stop",
+    "hotel:reset": "hotel stop && hotel start",
+    "hotel:info": "hotel --help",
     "postinstall": "npm run install:all"
   },
   "repository": {
@@ -25,7 +32,9 @@
   },
   "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
   "dependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "env-cmd": "^10.1.0",
+    "hotel": "^0.8.7"
   },
   "devDependencies": {
     "husky": "^4.2.3"
