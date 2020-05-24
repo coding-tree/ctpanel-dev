@@ -1,7 +1,7 @@
 {
   "name": "ctpanel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Coding Tree Panel application",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codingtreefoundation/meet-up.git"
+    "url": "https://github.com/coding-tree/ctpanel.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codingtreefoundation/meet-up/issues"
+    "url": "https://github.com/coding-tree/ctpanel/issues"
   },
-  "homepage": "https://github.com/codingtreefoundation/meet-up#readme",
+  "homepage": "https://ms.codingtree.pl/",
   "dependencies": {
     "concurrently": "^5.1.0",
     "hotel": "^0.8.7"
