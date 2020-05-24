@@ -19,13 +19,14 @@ Application helps Coding Tree members to achieve great things!
 We have great plans about this application.
 You can help us with development regardless of your experience level.
 
-### Follow these simple and streight forward steps to easly start application on your local environment
+### Follow these simple and streight forward steps to easly start application on your machine
 
 - npm install (from project root directory)
 - Find env files for client and server
 - Copy env files adding dot at the begining
 
     Linux commands:
+    
         cd client
         cp env-cmdrc .env-cmdrc
         cd server
