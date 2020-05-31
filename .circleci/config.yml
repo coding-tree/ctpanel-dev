@@ -19,9 +19,9 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Copy env and client build for staging
+          name: Copy env and client build for production
           command: |
-            cd client && npm install && cp env-cmdrc .env-cmdrc && CI=false npm run build:staging
+            cd client && npm install && cp env-cmdrc .env-cmdrc && CI=false npm run build:production
       - aws-s3/sync:
           arguments: |
             --acl public-read \
