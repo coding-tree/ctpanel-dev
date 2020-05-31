@@ -40,4 +40,4 @@ workflows:
       - deploy-front-s3:
           filters:
             branches:
-              only: circle-ci # only deploy on the circle-ci branch
+              only: develop # only deploy on the develop branch
