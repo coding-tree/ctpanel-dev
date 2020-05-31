@@ -11,8 +11,10 @@ jobs:
       - run: 
           name: Copy env and client build for staging
           command: |
-            cd client && npm install && cp env-cmdrc .envcmdrc && npm build:staging
+            cd client && npm install && cp env-cmdrc .env-cmdrc && CI=false npm run build:staging
   deploy-front-s3:
+    docker:
+      - image: 'circleci/node:erbium'
     steps:
       - aws-s3/sync:
           arguments: |
@@ -35,4 +37,4 @@ workflows:
             - build-front # only deploy once build job has completed
           filters:
             branches:
-              only: develop # only deploy on the develop branch
+              only: circle-ci # only deploy on the circle-ci branch
