@@ -39,7 +39,7 @@ If you still want to clone this repository first make sure you get familiar with
 
 For reference these are 2 commands for quick repository cloning:
 
-    git clone --recurse-submodules git@github.com:coding-tree/ctpanel-dev.git
+    git clone --recurse-submodules https://github.com/coding-tree/ctpanel-dev.git
     git submodule foreach git checkout develop
 
 ### Follow these simple and streight forward steps to easly start application on your machine
