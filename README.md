@@ -19,6 +19,29 @@ Application helps Coding Tree members to achieve great things!
 We have great plans about this application.
 You can help us with development regardless of your experience level.
 
+### How to clone this repository
+
+Some time ago we decided to use git submodules to split our repository to frontend and backend. This means that cloning this repository is not longer simple step. For most common usecases you dont have to clone this repository but specific one for your area of interest.
+
+- Frontend
+    
+      git clone https://github.com/coding-tree/ctpanel-frontend.git
+
+- Backend
+      
+      git clone https://github.com/coding-tree/ctpanel-backend.git
+
+If you still want to clone this repository first make sure you get familiar with basic information about how to work with git submodules - there are planty of great articles out there:
+
+    - https://git-scm.com/book/en/v2/Git-Tools-Submodules
+    - https://github.blog/2016-02-01-working-with-submodules/
+    - https://www.atlassian.com/git/tutorials/git-submodule
+
+For reference these are 2 commands for quick repository cloning:
+
+    git clone --recurse-submodules git@github.com:coding-tree/ctpanel-dev.git
+    git submodule foreach git checkout develop
+
 ### Follow these simple and streight forward steps to easly start application on your machine
 
 - npm install (from project root directory)
