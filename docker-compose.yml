@@ -1,0 +1,42 @@
+version: '2'
+
+networks:
+  ctpanel:
+    driver: bridge
+
+services:
+  client:
+    build: ./client
+    restart: 'no'
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    links:
+      - server
+    networks:
+      - ctpanel
+  server:
+    build: ./server
+    restart: 'no'
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    depends_on:
+      - mongodb
+    networks:
+      - ctpanel
+  mongodb:
+    image: mongo
+    restart: 'no'
+    container_name: mongodb
+    volumes:
+      - ./data-node:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --noauth
+    networks:
+      - ctpanel

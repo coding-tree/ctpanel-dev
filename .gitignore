@@ -28,3 +28,6 @@ keys.js
 
 # logs
 logs
+
+# mongodb
+data-node/
