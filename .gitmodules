@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = git@github.com:coding-tree/ctpanel-backend.git
+[submodule "client"]
+	path = client
+	url = git@github.com:coding-tree/ctpanel-frontend.git
