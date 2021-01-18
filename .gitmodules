@@ -1,8 +1,0 @@
-[submodule "client"]
-	path = client
-	url = ../ctpanel-frontend.git
-	branch = develop
-[submodule "server"]
-	path = server
-	url = ../ctpanel-backend.git
-	branch = develop
